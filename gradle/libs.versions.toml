@@ -1,0 +1,48 @@
+[versions]
+agp = "8.7.3"
+audiowaveProgressbar = "0.9.2"
+generativeai = "0.9.0"
+googleAuthLibraryOauth2Http = "1.19.0"
+googleCloudAiplatform = "3.24.0"
+googleCloudSpeech = "2.18.2"
+googleCloudTexttospeech = "2.7.0"
+grpcOkhttp = "1.57.2"
+kotlin = "1.9.24"
+coreKtx = "1.10.1"
+junit = "4.13.2"
+junitVersion = "1.1.5"
+espressoCore = "3.5.1"
+appcompat = "1.6.1"
+lifecycleRuntimeKtx = "2.6.2"
+material = "1.10.0"
+activity = "1.8.0"
+constraintlayout = "2.1.4"
+playServicesAds = "23.6.0"
+speechToText = "17.0.0"
+
+[libraries]
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+androidx-lifecycle-runtime-ktx = { module = "androidx.lifecycle:lifecycle-runtime-ktx", version.ref = "lifecycleRuntimeKtx" }
+audiowave-progressbar = { module = "com.github.alxrm:audiowave-progressbar", version.ref = "audiowaveProgressbar" }
+generativeai = { module = "com.google.ai.client.generativeai:generativeai", version.ref = "generativeai" }
+google-auth-library-oauth2-http = { module = "com.google.auth:google-auth-library-oauth2-http", version.ref = "googleAuthLibraryOauth2Http" }
+google-cloud-aiplatform = { module = "com.google.cloud:google-cloud-aiplatform", version.ref = "googleCloudAiplatform" }
+google-cloud-speech = { module = "com.google.cloud:google-cloud-speech", version.ref = "googleCloudSpeech" }
+google-cloud-texttospeech = { module = "com.google.cloud:google-cloud-texttospeech", version.ref = "googleCloudTexttospeech" }
+grpc-okhttp = { module = "io.grpc:grpc-okhttp", version.ref = "grpcOkhttp" }
+grpc-protobuf = { module = "io.grpc:grpc-protobuf", version.ref = "grpcOkhttp" }
+grpc-stub = { module = "io.grpc:grpc-stub", version.ref = "grpcOkhttp" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
+androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+play-services-ads = { module = "com.google.android.gms:play-services-ads", version.ref = "playServicesAds" }
+speech-to-text = { module = "com.google.mlkit:speech-to-text", version.ref = "speechToText" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+

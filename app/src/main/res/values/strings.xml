@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Animal Sound Maker</string>
+    <!-- api keys -->
+    <string name="enter_text">Enter Text:</string>
+    <string name="play_voice">Play Sound for Animal</string>
+    <string name="pitch">Pitch: 0.0</string>
+    <string name="speed">Speed: 1.0</string>
+    <string name="select_an_animal">Select an Animal:</string>
+    <string name="hello">Hello</string>
+    <string name="home">Home</string>
+    <string name="download_sound">Share or Download Sound (.mp3)</string>
+</resources>

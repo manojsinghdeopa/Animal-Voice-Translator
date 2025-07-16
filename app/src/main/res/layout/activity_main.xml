@@ -1,0 +1,187 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:scrollbars="none"
+    android:id="@+id/main">
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="top">
+
+    <!-- Animal Selection -->
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/select_an_animal"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:paddingBottom="5dp"/>
+    <Spinner
+        android:entries="@array/animals"
+        android:id="@+id/animalSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:padding="10dp"
+        android:background="@android:drawable/editbox_background"/>
+
+
+    <!-- User Input -->
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/enter_text"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:paddingTop="10dp"
+        android:paddingBottom="5dp"/>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/inputText"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="@string/hello"
+        android:maxLength="250"
+        android:singleLine="true"
+        android:imeOptions="actionDone"
+        android:maxLines="1"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:background="@android:drawable/editbox_background"/>
+
+
+    <!-- Pitch Control -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingTop="10dp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/pitchLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pitch"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <SeekBar
+            android:id="@+id/pitchSeekBar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:max="30"
+            android:progress="10"/>
+    </LinearLayout>
+
+
+    <!-- Speed Control -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingTop="10dp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/speedLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/speed"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <SeekBar
+            android:id="@+id/speedSeekBar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:max="30"
+            android:progress="10"/>
+    </LinearLayout>
+
+
+    <!-- Result -->
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/resultText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:textStyle="italic"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/downloadAudio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textSize="16sp"
+        android:visibility="gone"
+        android:textColor="#2196F3"
+        android:text="@string/download_sound"
+        android:gravity="center"
+        android:textStyle="bold|italic"/>
+
+
+    <!-- Play Button & Loader -->
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:padding="12dp"
+            android:id="@+id/playButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/play_voice"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:backgroundTint="@android:color/holo_blue_dark"
+            android:textColor="@android:color/white"/>
+
+        <rm.com.audiowave.AudioWaveView
+            android:id="@+id/audioWaveProgressBar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:chunkWidth="3dp"
+            app:chunkHeight="24dp"
+            app:minChunkHeight="2dp"
+            app:chunkSpacing="1dp"
+            app:chunkRadius="1dp"
+            app:touchable="false"
+            app:waveColor="@android:color/holo_blue_dark" />
+
+    </RelativeLayout>
+
+    <!-- Native Ad Section -->
+    <FrameLayout
+        android:id="@+id/adContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"/>
+
+    <!-- Floating Action Button -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:contentDescription="@string/home"
+        app:maxImageSize="30dp"
+        app:tint="@color/black"
+        android:layout_margin="15dp"
+        app:backgroundTint="@color/white"
+        android:src="@drawable/ic_home"/>
+
+
+</LinearLayout>
+
+</ScrollView>

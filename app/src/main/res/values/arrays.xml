@@ -1,0 +1,34 @@
+<resources>
+    <string-array name="animals">
+        <item>🐱 Cat</item>
+        <item>🐮 Cow</item>
+        <item>🦜 Bird</item>
+        <item>🐶 Dog</item>
+        <item>🧍 Human</item>
+        <item>🐎 Horse</item>
+        <item>🐑 Sheep</item>
+        <item>🐐 Goat</item>
+        <item>🐰 Rabbit</item>
+        <item>🐘 Elephant</item>
+        <item>🐵 Monkey</item>
+        <item>🐬 Dolphin</item>
+        <item>🐸 Frog</item>
+        <item>🦉 Owl</item>
+        <item>🐍 Snake</item>
+        <item>🦜 Parrot</item>
+        <item>🐓 Chicken</item>
+        <item>🐷 Pig</item>
+        <item>🦆 Duck</item>
+        <item>🐖 Donkey</item>
+        <item>🐺 Wolf</item>
+        <item>🦊 Fox</item>
+        <item>🐻 Bear</item>
+        <item>🐆 Lion</item>
+        <item>🐯 Tiger</item>
+        <item>🐧 Penguin</item>
+        <item>🐫 Seal</item>
+        <item>🐳 Whale</item>
+        <item>🦘 Kangaroo</item>
+        <item>🐿 Squirrel</item>
+    </string-array>
+</resources>
