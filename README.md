@@ -1,9 +1,10 @@
-# 🐾 AnimalVoiceTranslator
+# Animal Voice Translator 🐾 
 
-**AnimalVoiceTranslator** is an Android app that uses **Gemini API** and **Text-to-Speech (TTS) API** to convert user text into fun, animal-inspired voices.  
+**Animal Voice Translator** is an Android app that uses **Gemini API** and **Text-to-Speech (TTS) API** to convert user text into fun, animal-inspired voices.  
+
 It provides an entertaining way to play with text-to-animal voice translations.
 
----
+
 
 ## 🚀 Features
 
@@ -14,7 +15,7 @@ It provides an entertaining way to play with text-to-animal voice translations.
 - 🎨 Simple and fun UI with Material 3 styling  
 - 📂 Option to save or share generated audio  
 
----
+
 
 ## 🏗 Tech Stack
 
@@ -23,14 +24,14 @@ It provides an entertaining way to play with text-to-animal voice translations.
 - **Voice Synthesis:** Android Text-to-Speech (TTS) API   
 - **UI:** Jetpack Compose / XML + Material 3  
 
----
+
 
 ## ▶️ Getting Started
 
 - Clone the repository:
-   ```bash
-   git clone https://github.com/manojsinghdeopa/animalvoicetranslator.git
 
+    ```bash
+   git clone https://github.com/manojsinghdeopa/Animal-Voice-Translator.git
 
 - Open in Android Studio (latest version).
 
@@ -39,6 +40,8 @@ It provides an entertaining way to play with text-to-animal voice translations.
 - Add your Gemini API key to a safe config file or local.properties.
 
 - Run the app on a device (with TTS support enabled).
+
+
 
 
 
